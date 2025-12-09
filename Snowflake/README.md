@@ -1,4 +1,13 @@
  ## **❄️ Snowflake Setup & Workflow**
+Before starting, you must create an AWS IAM Role with the following:
+
+Permission: Access to the S3 bucket where your Iceberg data resides.
+
+Trust Relationship: Allow Snowflake to assume this role.
+
+This IAM role will be referenced in Snowflake’s External Volume
+
+
 
 This folder contains all Snowflake SQL scripts used in the Olist Kappa Pipeline project. The scripts are organized by purpose: Iceberg table setup, Data Warehouse modeling, streams, tasks, and stored procedures.
 
