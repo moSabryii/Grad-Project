@@ -114,5 +114,11 @@ CALL REFRESH_ICEBERG_METADATA_SP(
   'table_name',
   'external_volume_path'
 );
+```
 
 
+
+
+
+
+j
