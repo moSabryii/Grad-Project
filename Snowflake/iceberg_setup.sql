@@ -1,16 +1,4 @@
 --before doing all that you should note to create an iam role for snowflake
---1 Run the external volume
-
-CREATE OR REPLACE EXTERNAL VOLUME s3_iceberg_volume
-  STORAGE_LOCATIONS = (
-    (
-      NAME                  = 's3_iceberg',
-      STORAGE_PROVIDER      = 'S3',
-      STORAGE_BASE_URL      = 's3://unique-staging-bucket/brazilianstore/',
-      STORAGE_AWS_ROLE_ARN  = 'arn:aws:iam::<your-role>:role/SnowS3'
-    )
-  );
-
 --1 Run the catalog
 
 CREATE OR REPLACE CATALOG INTEGRATION s3_iceberg_catalog
