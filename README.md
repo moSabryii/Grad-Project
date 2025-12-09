@@ -1,6 +1,8 @@
 ## **📘 Table of Contents**
 📌 Project Overview
+
 🏗️ Architecture
+
 📦 Features
 🧰 Tech Stack
 🗂️ Data Modeling
