@@ -17,7 +17,7 @@ What to do:
 
 3. Create External Iceberg Table – Point Snowflake to the Iceberg data for querie
 
-## **NOTE :After following these steps you can now try**
+## NOTE :After following these steps you can now try
 ```SQL
 SELECT *
 FROM OLIST_TABLE
