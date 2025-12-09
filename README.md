@@ -3,10 +3,6 @@
 
 🏗️ Architecture
 
-📦 Features
-
-🧰 Tech Stack
-
 🗂️ Data Modeling
 
 ⚡ Streaming Pipeline
@@ -47,6 +43,8 @@ Power BI for BI reporting
 
 The pipeline delivers both live operational dashboards and deep historical analytics, making it ideal for marketplace, e‑commerce, and data‑intensive platforms.
 
+
+
 ## 🏗️ Architecture
 
 Below is the high-level architecture describing ingestion, real-time serving, Iceberg storage, and BI analytics.
@@ -76,6 +74,26 @@ Snowflake Streams + Tasks handle incremental loading, capturing new Iceberg chan
 
 Below is a photo of our DWH schema
 <img width="3662" height="1676" alt="drawSQL-image-export-2025-12-05" src="https://github.com/user-attachments/assets/edad3a18-6c5d-4ccd-a43b-0d94355bb287" />
+
+## ⚡ Streaming Pipeline
+
+**Kafka Producer**:
+
+ -Reads CSV files incrementally
+
+ -Sends JSON events to Kafka topic
+
+**Spark Structured Streaming**:
+
+ -Consumes Kafka messages
+
+ -Applies transformations
+
+ -Writes to two sinks:
+
+  Elasticsearch → real-time dashboards
+
+  Iceberg → historical analytics
 
 
 
