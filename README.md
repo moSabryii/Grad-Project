@@ -112,9 +112,7 @@ Snowflake Metadata Refresh Procedure:
 ```sql
 CALL REFRESH_ICEBERG_METADATA_SP(
   'table_name',
-  'external_volume_path');
-ff
-
-
+  'external_volume_path'
+);
 
 
