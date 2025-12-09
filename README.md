@@ -212,14 +212,14 @@ python producer/producer.py
 spark-submit \
   --master local[*] \
   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
- Spark_Consumer_To_Elastic.py
+ Transformation Code\Spark_Consumer_To_Elastic.py
 ```
 2- To s3
 ```Bash
 spark-submit \
   --master local[*] \
   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
- Spark_Consumer_To_S3.py
+  Transformation Code\Spark_Consumer_To_S3.py
 ```
 
 
